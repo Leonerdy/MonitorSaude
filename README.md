@@ -61,7 +61,7 @@ O MonitorSaude foi desenvolvido para oferecer uma experiência completa de monit
 
 **Tela de Nutrição com loading enquanto os dados são requistados na API**
 
-![Página Sobre a aplicação](screenshots/Aboutg.png)
+![Página Sobre a aplicação](screenshots/About.png)
 
 **Tela sobre a aplicação e sobre o teste técnico**
 
