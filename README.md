@@ -4,7 +4,7 @@
 
 ## Descrição
 
-O MonitorSaude foi desenvolvido para oferecer uma experiência completa de monitoramento pessoal, permitindo que o usuário registre seus exercícios, acompanhe métricas de saúde em tempo real e visualize seu progresso ao longo do tempo. O aplicativo sincroniza dados com APIs de saúde, como a **Google Fit API** (para Android) e a **Apple HealthKit** (para iOS), e conta com armazenamento local para acesso offline, garantindo que as informações estejam sempre disponíveis, mesmo sem conexão à internet.
+O MonitorSaude foi desenvolvido para oferecer uma experiência completa de monitoramento pessoal, permitindo que o usuário registre seus exercícios, acompanhe métricas de saúde em tempo real e visualize seu progresso ao longo do tempo. O aplicativo sincroniza dados com APIs de saúde, como a **Google Fit API** (para Android)  e conta com armazenamento local para acesso offline, garantindo que as informações estejam sempre disponíveis, mesmo sem conexão à internet.
 
 ## Features da Aplicação
 
