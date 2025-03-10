@@ -30,14 +30,23 @@ O MonitorSaude foi desenvolvido para oferecer uma experiência completa de monit
     ## Screenshots
 
 ![TPermissões da Google Fiteness API](screenshots/API.png)
+*Tela de login do Google OAuth2.0*
 ![TPermissões da Google Fiteness API](screenshots/API2.png)
+*Tela de Permissões do Google Fitness API*
 ![TPermissões da Google Fiteness API](screenshots/API3.png)
+*Tela de Permissões do Google Fitness API*
 ![Tela Inicial](screenshots/HOmeAutenticando.png)
+*Tela de home da aplicação com as entradas de peso e altura para o usuário*
 ![Tela Inicial com gráficos](screenshots/HomeGraficos.png)
+*Tela de home da aplicação com os gráficos de peso e altura*
 ![Página de Atividades](screenshots/Atividades.png)
+*Tela de Atividades*
 ![Página de Nutrição com Dados](screenshots/NutricaoGraficos.png)
+*Tela com os dados hidratação e calorias do usuario*
 ![Página de Nutrição Loading](screenshots/NutricaoLoading.png)
+*Tela de Nutrição com loading enquanto os dados são requistados na API*
 ![Página Sobre a aplicação](screenshots/Aboutg.png)
+*Tela sobre a aplicação e sobre o teste técnico*
 
 ## Tecnologias Utilizadas
 
