@@ -26,6 +26,18 @@ O MonitorSaude foi desenvolvido para oferecer uma experiência completa de monit
 
 - **Otimização de Performance**  
   - Uso de threading e tarefas assíncronas para garantir que o aplicativo seja responsivo e eficiente, independentemente da plataforma.
+ 
+    ## Screenshots
+
+![TPermissões da Google Fiteness API](screenshots/API.png)
+![TPermissões da Google Fiteness API](screenshots/API2.png)
+![TPermissões da Google Fiteness API](screenshots/API3.png)
+![Tela Inicial](screenshots/HOmeAutenticando.png)
+![Tela Inicial com gráficos](screenshots/HomeGraficos.png)
+![Página de Atividades](screenshots/Atividades.png)
+![Página de Nutrição com Dados](screenshots/NutricaoGraficos.png)
+![Página de Nutrição Loading](screenshots/NutricaoLoading.png)
+![Página Sobre a aplicação](screenshots/Aboutg.png)
 
 ## Tecnologias Utilizadas
 
