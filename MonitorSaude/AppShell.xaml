@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="MonitorSaude.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:fa="clr-namespace:UraniumUI.Icons.FontAwesome;assembly=UraniumUI.Icons.FontAwesome"
+    xmlns:local="clr-namespace:MonitorSaude.Views"
+    Title="MonitorSaude"
+    Shell.FlyoutBehavior="Disabled">
+    <!-- Desabilita o Flyout, deixando apenas a TabBar visível -->
+
+    <!-- Abas da Aplicação com Ícones e Cores -->
+    <TabBar>
+        <!-- Tab para a Home -->
+        <Tab Title="Home">
+            <Tab.Icon>
+                <FontImageSource
+                    FontFamily="FASolid"
+                    Glyph="{x:Static fa:Solid.House}"
+                    Color="Blue" />
+            </Tab.Icon>
+            <ShellContent Title="Home" ContentTemplate="{DataTemplate local:MainPage}" />
+        </Tab>
+
+        <!-- Tab para Exercícios -->
+        <Tab Title="Exercícios">
+            <Tab.Icon>
+                <FontImageSource
+                    FontFamily="FASolid"
+                    Glyph="{x:Static fa:Solid.PersonRunning}"
+                    Color="Red" />
+            </Tab.Icon>
+            <ShellContent Title="Atividades" ContentTemplate="{DataTemplate local:ActivityPage}" />
+        </Tab>
+
+        <!-- Tab para Nutrição -->
+        <Tab Title="Nutrição">
+            <Tab.Icon>
+                <FontImageSource
+                    FontFamily="FASolid"
+                    Glyph="{x:Static fa:Solid.Utensils}"
+                    Color="Purple" />
+            </Tab.Icon>
+            <ShellContent Title="Nutrição" ContentTemplate="{DataTemplate local:NutritionPage}" />
+        </Tab>
+
+        <!-- Tab para Sinais Vitais -->
+        <Tab Title="Sobre">
+            <Tab.Icon>
+                <FontImageSource
+                    FontFamily="FASolid"
+                    Glyph="{x:Static fa:Solid.AddressCard}"
+                    Color="PaleVioletRed" />
+            </Tab.Icon>
+            <ShellContent Title="Medições" ContentTemplate="{DataTemplate local:AboutPage}" />
+        </Tab>
+    </TabBar>
+
+</Shell>

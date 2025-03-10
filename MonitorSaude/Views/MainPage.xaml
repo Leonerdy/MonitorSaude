@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MonitorSaude.Views.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:material="http://schemas.enisn-projects.io/dotnet/maui/uraniumui/material"
+    xmlns:microcharts="clr-namespace:Microcharts.Maui;assembly=Microcharts.Maui"
+    xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+    Padding="10">
+
+    <ScrollView>
+        <VerticalStackLayout Style="{StaticResource ContentContainerStyle}">
+
+            <!--  Status de autenticação  -->
+            <Label
+                FontSize="18"
+                HorizontalOptions="Center"
+                Text="{Binding AuthenticationStatus}"
+                TextColor="Black" />
+
+            <!--  Loader  -->
+            <ActivityIndicator
+                HorizontalOptions="Center"
+                IsRunning="{Binding IsLoading}"
+                IsVisible="{Binding IsLoading}"
+                VerticalOptions="Center" />
+
+            <!--  Mensagem caso não tenha dados  -->
+            <Label
+                FontSize="16"
+                HorizontalOptions="Center"
+                IsVisible="{Binding NoData}"
+                Text="Nenhum dado disponível para os últimos registros."
+                TextColor="Gray" />
+
+            <!--  Peso  -->
+            <material:TextField
+                Title="Peso"
+                Keyboard="Numeric"
+                Text="{Binding UserData.Weights[0].Value, Mode=TwoWay}" />
+
+            <!--  Altura  -->
+            <material:TextField
+                Title="Altura"
+                Keyboard="Numeric"
+                Text="{Binding UserData.Heights[0].Value, StringFormat='{0:0.00}', Mode=TwoWay}" />
+
+            <!--  Botão de salvar  -->
+            <Button
+                BackgroundColor="{StaticResource SecondaryColor}"
+                Command="{Binding InsertUserDataCommand}"
+                Style="{StaticResource DefaultButtonStyle}"
+                Text="Salvar Dados" />
+
+            <!--  Gráficos apenas se houver dados  -->
+            <VerticalStackLayout IsVisible="{Binding HasData}">
+
+                <Label
+                    FontSize="24"
+                    HorizontalOptions="Center"
+                    Text="Peso" />
+                <microcharts:ChartView Chart="{Binding WeightChart}" HeightRequest="200" />
+                <Label
+                    FontSize="14"
+                    HorizontalOptions="Center"
+                    Text="Este gráfico mostra a variação do peso ao longo do tempo."
+                    TextColor="Gray" />
+
+                <Label
+                    FontSize="24"
+                    HorizontalOptions="Center"
+                    Text="Altura" />
+                <microcharts:ChartView Chart="{Binding HeightChart}" HeightRequest="200" />
+                <Label
+                    FontSize="14"
+                    HorizontalOptions="Center"
+                    Text="Este gráfico mostra a variação da altura registrada."
+                    TextColor="Gray" />
+
+            </VerticalStackLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

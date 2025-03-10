@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MonitorSaude.Views.NutritionPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:microcharts="clr-namespace:Microcharts.Maui;assembly=Microcharts.Maui"
+    Title="Nutrição"
+    BackgroundColor="White">
+
+    <VerticalStackLayout Padding="20">
+
+        <!--  Loader  -->
+        <ActivityIndicator
+            IsRunning="{Binding IsLoading}"
+            IsVisible="{Binding IsLoading}"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"/>
+
+        <!--  Mensagem caso não tenha dados  -->
+        <Label
+            FontSize="16"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            IsVisible="{Binding NoData}"
+            Text="Nenhum dado disponível para os últimos 7 dias."
+            TextColor="Gray" />
+        <Label
+            FontSize="16"
+            HorizontalOptions="Center"
+            Text="Dados de Calorias consumidadas e hidratação dos últimos 7 dias."
+            TextColor="Gray" />
+
+        <!--  Gráficos apenas se houver dados  -->
+        <VerticalStackLayout IsVisible="{Binding HasData}">
+            <Label
+                FontSize="24"
+                HorizontalOptions="Center"
+                Text="Hidratação" />
+            <microcharts:ChartView Chart="{Binding HydrationChart}" HeightRequest="200" />
+            <Label
+                FontSize="14"
+                HorizontalOptions="Center"
+                Text="Este gráfico mostra a quantidade de água consumida em litros por dia."
+                TextColor="Gray" />
+
+            <Label
+                FontSize="24"
+                HorizontalOptions="Center"
+                Text="Calorias Consumidas" />
+            <microcharts:ChartView Chart="{Binding NutritionChart}" HeightRequest="200" />
+            <Label
+                FontSize="14"
+                HorizontalOptions="Center"
+                Text="Este gráfico representa o total de calorias consumidas diariamente."
+                TextColor="Gray" />
+        </VerticalStackLayout>
+
+    </VerticalStackLayout>
+
+</ContentPage>
