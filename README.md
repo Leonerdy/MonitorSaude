@@ -60,9 +60,6 @@ O MonitorSaude foi desenvolvido para oferecer uma experiência completa de monit
 
 **Tela de Nutrição com loading enquanto os dados são requistados na API**
 
-
-**Tela sobre a aplicação e sobre o teste técnico**
-
 ## Tecnologias Utilizadas
 
 - **.NET MAUI**  
