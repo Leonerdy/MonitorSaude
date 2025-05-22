@@ -81,7 +81,7 @@ O MonitorSaude foi desenvolvido para oferecer uma experiência completa de monit
 
 ## Considerações Finais
 
-Este projeto foi desenvolvido para demonstrar habilidades avançadas em resolução de problemas complexos, implementação de padrões de projeto, customizações nativas e otimização de performance. Ele serve como prova de conceito e evidência das capacidades necessárias para atuar como Analista de Sistemas Desenvolvedor Mobile Sênior na Auvo Tecnologia.
+Este projeto foi desenvolvido para demonstrar habilidades avançadas em resolução de problemas complexos, implementação de padrões de projeto, customizações nativas e otimização de performance. Ele serve como prova de conceito e evidência das capacidades necessárias para atuar como Analista de Sistemas Desenvolvedor Mobile Sênior.
 
 ---
 
