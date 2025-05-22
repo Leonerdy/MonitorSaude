@@ -1,7 +1,6 @@
 # MonitorSaude
 
-**MonitorSaude** é um aplicativo completo para monitoramento de atividades físicas, saúde e alimentação. Este projeto faz parte de um teste técnico para o cargo de Analista de Sistemas Desenvolvedor Mobile (Nível Sênior) na Auvo Tecnologia.
-
+**MonitorSaude** é um aplicativo completo para monitoramento de atividades físicas, saúde e alimentação. 
 ## Descrição
 
 O MonitorSaude foi desenvolvido para oferecer uma experiência completa de monitoramento pessoal, permitindo que o usuário registre seus exercícios, acompanhe métricas de saúde em tempo real e visualize seu progresso ao longo do tempo. O aplicativo sincroniza dados com APIs de saúde, como a **Google Fit API** (para Android)  e conta com armazenamento local para acesso offline, garantindo que as informações estejam sempre disponíveis, mesmo sem conexão à internet.
